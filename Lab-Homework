@@ -1,0 +1,33 @@
+#include <stdio.h>
+void sort_array(int , int);
+
+
+int array[50];
+int n,i,j,a,b;
+int main(void) {
+  //Defining the size of the array  
+  printf("Array size: ");
+  scanf("%d",&n);
+  printf("Elements: ");
+  for(i=0;i<n;i++)
+    scanf("%d",&array[i]);
+  sort_array(array[], n);
+	
+  
+
+  return 0;
+}
+void sort_araray(int array[],int n){
+  int a,b;
+  for (a = 0; i < n; a++){
+      for (b = 0; b < n; b++)             
+      {
+        if (array[b] > array[a])                
+        {
+          int tmp = array[i];         
+          array[i] = array[j];            
+          array[j] = tmp;            
+        }  
+      }
+    }
+}

@@ -30,7 +30,8 @@ void fill_array(int array[]){
 	for(int i = 0; i < n; i++){
     printf("Elements %d: ",i);
     scanf("%d", &array[i]);
-  }}
+  }
+}
 //Sorting the array
 void sort_array(int array[]){
   int i,j,tmp;
@@ -40,4 +41,7 @@ void sort_array(int array[]){
           tmp = array[i];         
           array[i] = array[j];            
           array[j] = tmp;            
-}}}}
+        }
+      }
+  }
+}

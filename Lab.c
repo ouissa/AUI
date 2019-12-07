@@ -17,16 +17,20 @@ int main(void) {
   }
   printf("Elment to find? ");
   scanf("%d",&f);
-  find_element(array,f);
-  printf("const char *restrict __format, ...")
+  printf("The elment is at: %d\n",find_element(array,f));
   return 0;
 }
+//Find an elment function
 int find_element(int array[],int f){
-  
+  for(int i=0;i<n;i++){
+    if(array[i]==f){
+      return i;
+    }
+
+  }
 }
-//filling the array
+//Filling the array
 void fill_array(int array[]){
-  
 	for(int i = 0; i < n; i++){
     printf("Elements %d: ",i);
     scanf("%d", &array[i]);

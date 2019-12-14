@@ -17,6 +17,10 @@ int main(void){
   int index=0; //each elment has an index in the library 
   student_t s1={.id= 79945,.name= "iliass jabali"};
   add_student(library, &s1, index++);
-  print
+  
 return 0;
+}
+//adding book to library 
+void add_book(student_t* library[], student_t *bookp, int index){
+    library[index] = bookp;
 }

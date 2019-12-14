@@ -8,8 +8,8 @@ typedef struct{
 }student_t;
 //Defining the functions
 void add_student(student_t* library[], student_t* , int index); 
-int search_by_id(student_t* library[], int index); 
-int contains_number(student_t* library[]->title,int keyword)
+int search_by_id(student_t* library[],int, int index); 
+int contains_number(student_t* library[]->id,int keyword);
 
 int main(void){
   int keyword;
@@ -21,16 +21,21 @@ int main(void){
   add_student(library, &s1, index++);
   add_student(library, &s2, index++);
   
+  printf("The book is at: %d\n",search_by_id(library, 79945, index);
   return 0;
 }
 //adding book to library 
 void add_book(student_t* library[], student_t *studentp, int index){
    library[index] = studentp;
 }
-int search_by_id(student_t* library[], int index){
+int search_by_id(student_t* library[], int keyword, int index){
    int i;
    for (i = 0; i < index; i++)
-        if (contains_number(library[i]->title, keyword))
+        if (contains_number(library[i]->id, keyword))
             return i;
     return -1;//-1 means it's not in the library 
 }  
+int contains_number(student_t* library[]->id,int keyword){
+    if (id == keyword)
+        return i;
+}

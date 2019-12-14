@@ -18,8 +18,8 @@ int main(void) {
   
 
   printf("the optionsare: \n1)To print all the elements of the array \n2)Print the n number of elements \n3)search for an element \n4)to sort the array \n");
-  scanf("%d",&n);
   while(b!='x'&& b!='X'){
+    scanf("%d",&n);
     switch(n){
       case 1: 
         for(i=0;i<s;i++){
@@ -62,6 +62,5 @@ int main(void) {
     }
 
   }
-
   return 0;
 }

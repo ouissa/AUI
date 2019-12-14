@@ -9,6 +9,7 @@ typedef struct{
 //Defining the functions
 void add_student(student_t* library[], student_t* , int index); 
 int search_by_id(student_t* library[], int index); 
+int contains_number(student_t* library[]->title,int keyword)
 
 int main(void){
   int keyword;
